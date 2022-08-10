@@ -10,6 +10,13 @@ body {
   color: #333333;
 }
 
+/*.svg-sprite {*/
+/*  position: absolute;*/
+/*  visibility: hidden;*/
+/*  width: 0;*/
+/*  height: 0;*/
+/*}*/
+
 .container {
   max-width: 1264px;
   margin: 0 auto;
