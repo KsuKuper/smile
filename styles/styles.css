@@ -49,24 +49,33 @@ body {
   margin: 0 auto 24px;
   width: 220px;
   height: 220px;
-  background-size: contain;
+  /*background-size: contain;*/
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
 .mood-img._mood-poor {
-  background-image: url("../images/sad1.svg");
+  /*background-image: url("../images/sad1.svg");*/
+  background-image: url("../images/sprite-smile.png");
+  background-position: 0 0;
 }
 
 .mood-img._mood-average {
-  background-image: url("../images/confused2.svg");
+  /*background-image: url("../images/confused2.svg");*/
+  background-image: url("../images/sprite-smile.png");
+  background-position: -220px 0;
 }
 
 .mood-img._mood-good {
-  background-image: url("../images/happy3.svg");
+  /*background-image: url("../images/happy3.svg");*/
+  background-image: url("../images/sprite-smile.png");
+  background-position: -440px 0;
 }
 
 .mood-img._mood-excellent {
-  background-image: url("../images/in-love4.svg");
+  /*background-image: url("../images/in-love4.svg");*/
+  background-image: url("../images/sprite-smile.png");
+  background-position: -660px 0;
 }
 
 .mood-title {
