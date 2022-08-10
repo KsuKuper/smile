@@ -46,7 +46,27 @@ body {
 }
 
 .mood-img {
-  margin-bottom: 24px;
+  margin: 0 auto 24px;
+  width: 220px;
+  height: 220px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.mood-img._mood-poor {
+  background-image: url("../images/sad1.svg");
+}
+
+.mood-img._mood-average {
+  background-image: url("../images/confused2.svg");
+}
+
+.mood-img._mood-good {
+  background-image: url("../images/happy3.svg");
+}
+
+.mood-img._mood-excellent {
+  background-image: url("../images/in-love4.svg");
 }
 
 .mood-title {
@@ -56,19 +76,19 @@ body {
   margin-bottom: 10px;
 }
 
-.poor {
+.mood-title._mood-poor {
   color: #e91c2b;
 }
 
-.average {
+.mood-title._mood-average {
   color: #f48a1d;
 }
 
-.good {
+.mood-title._mood-good {
   color: #eacf2a;
 }
 
-.excellent {
+.mood-title._mood-excellent {
   color: #0ca350;
 }
 
