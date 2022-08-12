@@ -24,15 +24,61 @@ body {
 }
 
 .feedback {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100vh;
+  padding-top: 160px;
+  padding-bottom: 160px;
 }
 
 .row {
   display: flex;
-  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
 }
 
 .col {
@@ -43,75 +89,86 @@ body {
   text-align: center;
   font-size: 64px;
   font-weight: 400;
+  margin-bottom: 120px;
 }
 
-.mood-col {
-  padding: 32px 0;
+.mood {
+  margin: 0 -8px 120px;
+}
+
+.mood__col {
+  padding: 32px 16px;
   text-align: center;
   border: 1px solid #c0c0c0;
   border-radius: 8px;
 }
 
-.mood-img {
-  margin: 0 auto 24px;
-  width: 220px;
-  height: 220px;
+[class*="col-"] {
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
-.mood-img._png {
+.mood__img {
+  margin: 0 auto 24px;
+  width: 100%;
+  max-width: 180px;
+  aspect-ratio: 1/1;
+}
+
+.mood__img._png {
   /*background-size: contain;*/
   /*background-size: cover;*/
   /*background-repeat: no-repeat;*/
 }
 
-.mood-img._mood-poor {
+.mood__img._mood-poor {
   /*background-image: url("../images/sad1.svg");*/
   /*background-image: url("../images/sprite-smile.png");*/
   /*background-position: 0 0;*/
 }
 
-.mood-img._mood-average {
+.mood__img._mood-average {
   /*background-image: url("../images/confused2.svg");*/
   /*background-image: url("../images/sprite-smile.png");*/
   /*background-position: -220px 0;*/
 }
 
-.mood-img._mood-good {
+.mood__img._mood-good {
   /*background-image: url("../images/happy3.svg");*/
   /*background-image: url("../images/sprite-smile.png");*/
   /*background-position: -440px 0;*/
 }
 
-.mood-img._mood-excellent {
+.mood__img._mood-excellent {
   /*background-image: url("../images/in-love4.svg");*/
   /*background-image: url("../images/sprite-smile.png");*/
   /*background-position: -660px 0;*/
 }
 
-.mood-title {
+.mood__title {
   font-size: 32px;
   line-height: 1;
   font-weight: 400;
   margin-bottom: 10px;
 }
 
-.mood-title._mood-poor {
+.mood__title--poor {
   color: #e91c2b;
 }
 
-.mood-title._mood-average {
+.mood__title--average {
   color: #f48a1d;
 }
 
-.mood-title._mood-good {
+.mood__title--good {
   color: #eacf2a;
 }
 
-.mood-title._mood-excellent {
+.mood__title--excellent {
   color: #0ca350;
 }
 
-.mood-submit {
+.mood__submit {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -122,4 +179,19 @@ body {
   border: 1px solid #c0c0c0;
   border-radius: 8px;
   background-color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+
+  .mood__col {
+    margin-bottom: 16px;
+  }
+
+  .col-3:last-child .mood__col {
+    margin-bottom: 0;
+  }
 }
